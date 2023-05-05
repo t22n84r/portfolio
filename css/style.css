@@ -1,12 +1,12 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    background: #F5EDCE;
+    background: #C8F0FF;
     color: #1A0000;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Mono', monospace;
-    color: #58287F;
+    color: #003C5A;
 }
 
 .heading-grid {
@@ -14,10 +14,6 @@ h1, h2, h3, h4 {
     grid-template-columns: 70% 30%;
     grid-template-rows: 200px;
     align-items: center;
-}
-
-#name {
-    margin-left: 100px;
 }
 
 .intro-grid {
@@ -44,7 +40,8 @@ h1, h2, h3, h4 {
 }
 
 #web-background {
-    background: deepskyblue;
+    background: skyblue;
+    color: gray;
 }
 
 .s_media {
@@ -52,23 +49,20 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-.fa {
-    padding: 10px;
+.s_media_icons {
+    margin: 10px;
     width: 50px;
-    text-align: center;
-    text-decoration: none;
+    height: 50px;
 }
 
-.fa:hover {
+.s_media_icons:hover {
     opacity: 0.5;
 }
 
-.fa-linkedin {
-    background: white;
-    color: black;
-  }
+.text-center {
+    text-align: center;
+}
 
-.fa-github {
-    background: white;
-    color: black;
-  }
+#contact {
+    text-decoration: underline;
+}
