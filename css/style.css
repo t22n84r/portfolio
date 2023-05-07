@@ -1,33 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     background: #C8F0FF;
-    color: #1A0000;
+    color: #5A5A5A;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     color: #003C5A;
 }
 
-.heading-grid {
+a:hover, a:focus {
+    box-shadow: inset 100% 0 0 0;
+    color: #003C5A;
+    opacity: 0.5;
+}
+
+.page-header {
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 200px;
     align-items: center;
+}
+
+#logo {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
 }
 
 .intro-grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 400px;
-    grid-gap: 30px;
+    padding-top: 10%;
+    grid-gap: 20px;
     align-items: center;
 }
 
-.profile-picture {
+#profile-picture {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
     box-shadow: 0 10px 5px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
     display: block;
@@ -35,27 +53,28 @@ h1, h2, h3, h4 {
     margin-right: 0;
 }
 
-.profile-picture:hover {
+#profile-picture:hover, #profile-picture:focus {
     box-shadow: 0 10px 12px 0 skyblue;
 }
 
 #web-background {
     background: skyblue;
-    color: gray;
+    color: #5A5A5A;
 }
 
-.s_media {
-    padding: 70px 0;
+.social-media {
+    padding: 140px 0;
     text-align: center;
 }
 
-.s_media_icons {
+.social-media_icons {
     margin: 10px;
     width: 50px;
     height: 50px;
 }
 
-.s_media_icons:hover {
+.social-media_icons:hover, .social-media_icons:focus {
+    cursor: pointer;
     opacity: 0.5;
 }
 
@@ -63,6 +82,36 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-#contact {
+table, tr, td, th {
+    text-align: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #1A0000;
+    border-radius: 10px
+}
+
+#underline {
     text-decoration: underline;
+}
+
+form input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 230px;
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#submit {
+    background-color: #89C4E1;
+    margin: 20px 0;
+}
+
+#submit:hover, #submit:focus{
+    cursor: pointer;
+    opacity: 0.5;
 }
