@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -13,12 +13,6 @@ h1, h2, h3, h4 {
     color: #003C5A;
 }
 
-a:hover, a:focus {
-    box-shadow: inset 100% 0 0 0;
-    color: #003C5A;
-    opacity: 0.5;
-}
-
 .page-header {
     display: flex;
     width: 100%;
@@ -26,12 +20,19 @@ a:hover, a:focus {
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+    flex: 1 1 auto;
+    text-align: right;
 }
 
-.page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+.page-header__item a{
+transition: all ease-in-out 0.5s;
+}
+
+.page-header__item a:hover, .page-header__item a:focus
+{
+    opacity: .75;
+    background: skyblue;
+    text-decoration: overline;
 }
 
 #logo {
@@ -115,6 +116,7 @@ form {
 #submit {
     background-color: #89C4E1;
     margin: 20px 0;
+    transition: all ease-in-out .4s;
 }
 
 #submit:hover, #submit:focus {
@@ -127,4 +129,56 @@ form {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     grid-gap: 50px;
     margin: 0 30px;
+}
+
+@media all and (max-width: 300px) {
+    #work-grid {
+        grid-template: 1fr / 4fr;
+        grid-gap: 10px;
+    }
+    h1 {
+        font-size: 22px;
+      }
+}
+
+@keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+}
+
+.sun {
+animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
