@@ -1,16 +1,24 @@
+:root {
+    --bodyBackgroundColor: #C8F0FF;
+    --bodyTextColor: #5a5a5a;
+    --headingTextColor: #003c5a;
+    --skyblueBackgroundColor: #89c4e1;
+    --preferredTransition: all ease-in-out .3s;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto Slab', serif;
-    background: #C8F0FF;
-    color: #5A5A5A;
+    background: var(--bodyBackgroundColor);
+    color: var(--bodyTextColor);
 }
 
 h1, h2, h3, h4 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #003C5A;
+    color: var(--headingTextColor);
 }
 
 .page-header {
@@ -25,13 +33,13 @@ h1, h2, h3, h4 {
 }
 
 .page-header__item a{
-transition: all ease-in-out 0.5s;
+    transition: var(--preferredTransition);
 }
 
 .page-header__item a:hover, .page-header__item a:focus
 {
     opacity: .75;
-    background: skyblue;
+    background: var(--skyblueBackgroundColor);
     text-decoration: overline;
 }
 
@@ -54,17 +62,17 @@ transition: all ease-in-out 0.5s;
     height: 100%;
     max-height: 300px;
     box-shadow: 0 10px 5px 0 rgba(34, 60, 80, .16);
-    transition: all ease-in-out .2s;
+    transition: var(--preferredTransition);
     float: left;
     margin-right: 40px;
 }
 
 #profile-picture:hover, #profile-picture:focus {
-    box-shadow: 0 10px 12px 0 skyblue;
+    box-shadow: 0 10px 12px 0 var(--skyblueBackgroundColor);
 }
 
 #web-background {
-    background: skyblue;
+    background: var(--skyblueBackgroundColor);
     color: #5A5A5A;
 }
 
@@ -114,9 +122,9 @@ form {
 }
 
 #submit {
-    background-color: #89C4E1;
+    background-color: var(--skyblueBackgroundColor);
     margin: 20px 0;
-    transition: all ease-in-out .4s;
+    transition: var(--preferredTransition);
 }
 
 #submit:hover, #submit:focus {
