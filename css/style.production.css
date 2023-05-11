@@ -164,6 +164,7 @@ form {
     -webkit-transition: all ease-in-out .3s;
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
+    border-radius: 15px 50px;
 }
 
 #submit:hover, #submit:focus {
@@ -174,23 +175,11 @@ form {
 #work-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 50px 1fr;
-    -ms-grid-columns: 1fr 50px 1fr;
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    margin: 0 30px;
-}
-
-@media all and (max-width: 300px) {
-    #work-grid {
-        -ms-grid-rows: 1fr;
-        -ms-grid-columns: 4fr;
-            grid-template: 1fr / 4fr;
-        grid-gap: 10px;
-    }
-    h1 {
-        font-size: 22px;
-      }
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 @-webkit-keyframes color-change {
@@ -274,4 +263,15 @@ form {
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media all and (max-width: 300px) {
+    #work-grid {
+        -ms-grid-columns: 1fr 10px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    h1 {
+        font-size: 22px;
+      }
 }
