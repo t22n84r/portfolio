@@ -4,13 +4,14 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Home</title>
+        <title>Work</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.production.css" type="text/css">
 
         <link rel="icon" type="image/png" href="images/favicon.png">
@@ -27,60 +28,300 @@
             </nav>
         </header>
 
-        <main class="text-center">
-              <h1 id="underline">&nbsp;Work&nbsp;</h1>
+        <main>
+            <div class="text-center text-decoration-underline mb-5"><h1>&nbsp;Work&nbsp;</h1></div>
+            <div class="text-center text-decoration-underline mb-5"><h3>&nbsp;Projects&nbsp;</h3></div>
 
-              <div id="work-grid">
-                    <div>
-                        <h3>Lorem Ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/Screenshot_project_1.jpg" class="card-img-top" alt="external api data viewer js app image">
+                            <div class="card-body">
+                              <h5 class="card-title">PokeDex App</h5>
+                              <p class="card-text">This is a JavaScript application that fetches data from an external API</p>
+                              <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#PokeDexApp">Details</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Lorem Ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/Screenshot_project_2.jpg" class="card-img-top" alt="myFlix api project image">
+                            <div class="card-body">
+                              <h5 class="card-title">MyFlix API</h5>
+                              <p class="card-text">This is the server-side component of a movie database web application.</p>
+                              <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#MyFlixApi">Details</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Lorem Ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/Screenshot_project_3.jpg" class="card-img-top" alt="myFlix client project image">
+                            <div class="card-body">
+                              <h5 class="card-title">MyFlix Client</h5>
+                              <p class="card-text">This is the server-side component of a movie database web application.</p>
+                              <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#MyFlixClient">Details</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Lorem Ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/Screenshot_project_4.jpg" class="card-img-top" alt="Meet app project image">
+                            <div class="card-body">
+                              <h5 class="card-title">Meet App</h5>
+                              <p class="card-text">This is a meet app, displaying a list of upcoming events for a city and time of the events.</p>
+                              <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#MeetApp">Details</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
 
-              </div>
+            <div class="text-center text-decoration-underline my-5"><h3>&nbsp;Job experience&nbsp;</h3></div>
+            <div class="container">
+                <p><h4>Devexperts</h4></p>
+                <p><h5>Technical Support Engineer</h5></p>
+                <p>Mar 2021 - Apr 2023 (2 years 2 months)</p>
+                <ul>
+                    <li>Supported a financial exchange system handling incident reporting, service requests, provided developers with client feedback and contributed to knowledge base articles, all using Atlassian Software Suite.</li>
+                    <li>Analyze app logs using Kibana Elastic Search and server's configuration files in incidents, document the problem, troubleshooting steps and if needed escalate to appropriate teams.</li>
+                    <li>Configure and monitor apps and app servers through Zabbix monitoring system.</li>
+                    <li>Used Version Control Systems like GIT and source code management client tools like Stash and Git Repo.</li>
+                    <li>Utilized Ansible and Ansible Tower as configuration management tool to configure, manage and automate middleware application servers tasks.</li>
+                </ul>
+                <hr class="fading-hr" />
+                <p><h4>Amazon</h4></p>
+                <p><h5>IT Support Associate II</h5></p>
+                <p>Oct 2018 - Mar 2021 (2 years 6 months)</p>
+                <ul>
+                    <li>Successfully built IT infrastructure and launched, two hybrid cloud sites in West Deptford a locally managed site and in Logan Township a (Juniper automated network architecture) site.</li>
+                    <li>Provide excellent technical support through analysis and problem resolving of a variety of software, hardware and Network technologies.</li>
+                    <li>Wrote and execute Change Management documents for troubleshooting, deployment or modifying local network infrastructure.</li>
+                    <li>Worked in a Linux environment troubleshooting and diagnosing infrastructure and performance issues also used Ansible for managing Linux deployment and configuration.</li>
+                </ul>
+                <hr class="fading-hr" />
+                <p><h5>IT Support Associate I</h5></p>
+                <p>Jan 2016 - Oct 2018 (2 years 10 months)</p>
+                <hr class="fading-hr" />
+                <p><h5>Education</h5></p>
+                <p>Rowan College at Burlington County</p>
+                <p>Associate of Science - AS, Computer Science</p>
+                <p>2014 - 2017</p>
+                <hr class="fading-hr" />
+                <p><h5>Certifications</h5></p>
+                <p>AWS Certified SysOps Administrator – Associate - Amazon Web Services (AWS)</p>
+                <p>Issued Dec 2020 - Expires Dec 2023</p>
+            </div>
+
+            <!-- ===== All Modals ===== -->
+            <div class="modal fade" id="PokeDexApp" tabindex="-1" aria-labelledby="PokeDexAppLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title" id="PokeDexAppLabel">PokeDex App Details</h5>
+                        </div>
+                        <div class="modal-body text-start">
+                            <img src="./images/Screenshot_project_1.jpg" class="img-fluid mb-5" alt="Project 1 image" >
+                            <p>This is a JavaScript application that fetches data from an external API and displays it in a user-friendly manner. It utilizes HTML, Bootstrap CSS, and JavaScript to create a dynamic web interface for viewing the data.</p>
+
+                            <p>I was the developer for this project.</p>
+                            <p>
+                                Below were the technical requirements of the project:-
+                                <ul>
+                                    <li> The app must load data from an external API; for instance, the Pokémon API. </li>
+                                    <li> The app must display a list of items loaded from that API after the page is loaded. </li>
+                                    <li> The app must enable the viewing of more details for a given list item on demand, such as when clicking on a list item. </li>
+                                    <li> The app must have CSS styling. </li>
+                                    <li> The JavaScript code must be formatted according to ESLint rules. </li>
+                                    <li> The JavaScript code may be manually formatted or by Prettier. </li>
+                                    <li> The app must use at least one additional complex UI pattern, such as a modal, for details or touch interactions. </li>
+                                    <li> The app may allow searching for items (e.g., searching for Pokémon). </li>
+                                    <li> The app must not throw any errors when being used. </li>
+                                    <li> The app should be deployed to a publicly accessible platform like GitHub Pages. </li>
+                                    <li> The app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11. </li>
+                                </ul>
+                            </p>
+                            <p>
+                                Some things I did to improve the project:-
+                                <ul>
+                                    <li> Used IIFE to avoid polluting the global namespace and used it in module pattern to learn JS coding best practices.</li>
+                                    <li> Used Bootstrap to make CSS implementation easier, responsive and accessible. </li>
+                                    <li> Used arrow functions to improve readability and code control. </li>
+                                </ul>
+                            </p>
+                            <p>
+                            Though this project turned out quite good I wish I used Jquery instead of vanilla javascript. Jquery makes coding much simpler and neater. Though it has performance issues with bigger apps, for smaller apps like this its not an issue.
+                            </p>
+                            <p>
+                            Some of the things I learned while doing this project are- IIFE, DOM interaction, AJAX, CSS frameworks, complex UI patterns, Jquery, JavaScript performance improvement and debugging.
+                            </p>
+                            <p>Technologies used in this project are HTML, Bootstrap CSS and Javascript.</p>
+                            <p> Github link- <a href="https://github.com/t22n84r/external-api-data-viewer-js-app">Link</a></p>
+                            <p> Live hosted version of the app- <a href="https://t22n84r.github.io/external-api-data-viewer-js-app/">Link</a></p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-warning btn-lg" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="MyFlixApi" tabindex="-1" aria-labelledby="MyFlixApiLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title" id="MyFlixApiLabel">MyFlix API Details</h5>
+                        </div>
+                        <div class="modal-body text-start">
+                            <img src="./images/Screenshot_project_2.jpg" class="img-fluid mb-5" alt="Project 2 image" >
+
+                            <p>
+                                This is the server-side component of a movies database web application. This simple CRUD (Create, Read, Update, Delete) API application will provide users with access to information about different movies, directors and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+                            </p>
+                            <p>I was the developer for this project.</p>
+                            <p>
+                                Below were the technical requirements of the project-
+                                <ul>
+                                    <li>Return a list of ALL movies to the user</li>
+                                    <li>Return data (description, genre, director, image URL, whether it’s featured or not) about a single movie by title to the user</li>
+                                    <li>Return data about a genre (description) by name/title (e.g., “Thriller”)</li>
+                                    <li>Return data about a director (bio, birth year, death year) by name</li>
+                                    <li>Allow new users to register</li>
+                                    <li>Allow users to update their user info (username, password, email, date of birth)</li>
+                                    <li>Allow users to add a movie to their list of favorites</li>
+                                    <li>Allow users to remove a movie from their list of favorites</li>
+                                    <li>Allow existing users to deregister</li>
+                                </ul>                                
+                            </p>
+                            <p>
+                                Although the project only required written documentation in HTML, I took the initiative to create swagger UI for documentation. All the endpoints definition and data requirements  can be easily seen and tested in the swagger UI.
+                            </p>
+                            <p>
+                                Some of the things I learned while doing this project are- NodeJS package management, express, CORS implementation, database management & operations, authentication & authorization for JavaScript apps, Data Security, Validation & Ethics and swagger implementation.
+                            </p>
+                            <p> Technologies used in this project are NodeJS, Express, MongoDB and Swagger. </p>
+                            <p> Github link- <a href="https://github.com/t22n84r/myFlix_api">Link</a></p>
+                            <p> Live hosted version of the app- <a href="https://high-triode-348322.lm.r.appspot.com/api-docs">Link</a></p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-warning btn-lg" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="MyFlixClient" tabindex="-1" aria-labelledby="MyFlixClientLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title" id="MyFlixClientLabel">MyFlix Client Details</h5>
+                        </div>
+                        <div class="modal-body text-start">
+                            <img src="./images/Screenshot_project_3.jpg" class="img-fluid mb-5" alt="Project 3 image" >
+                            <p>
+                                This is the client-side component of a movies database web application. This simple React application will provide users with access to a view of list movies, list of genres & suggested movies from them, list of directors & suggested movies from them and profile view with ability to edit personal information, view users favorite movies list, delete user account.
+                            </p>
+                            <p>I was the developer for this project.</p>
+                            <p>
+                                Below were the technical requirements of the project-
+                                Main view
+                                <ul>
+                                    <li>Returns ALL movies to the user (each movie item with an image, title, and description)</li>
+                                    <li>Filtering the list of movies with a “search” feature</li>
+                                    <li>Ability to select a movie for more details</li>
+                                    <li>Ability to log out</li>
+                                    <li>Ability to navigate to Profile view</li>
+                                </ul>
+                                Single Movie view
+                                <ul>
+                                    <li>Returns data (description, genre, director, image) about a single movie to the user</li>
+                                    <li>Allows users to add a movie to their list of favorites</li>
+                                </ul>
+                                Login view
+                                <ul>
+                                    <li>Allows users to log in with a username and password</li>
+                                </ul>
+                                Signup view
+                                <ul>
+                                    <li>Allows new users to register (username, password, email, date of birth)</li>
+                                </ul>
+                                Profile view
+                                <ul>
+                                    <li>Displays user registration details</li>
+                                    <li>Allows users to update their info (username, password, email, date of birth)</li>
+                                    <li>Displays favorite movies</li>
+                                    <li>Allows users to remove a movie from their list of favorites</li>
+                                    <li>Allows existing users to deregister</li>
+                                </ul>
+                            </p>
+                            <p>As seen above genre view and director view weren't a requirement for this project but I added them to make the app more engaging for the user.</p>
+                            <p>While learning and researching about this project I had the opportunity to learn about Redux, albeit it was at the very end of the project. If I had time I would've implemented Redux for state management.</p>
+                            <p>The app was coded using all React tools and build with parcel.</p>
+                            <p> Github link- <a href="https://github.com/t22n84r/myFlix-client">Link</a></p>
+                            <p> Live hosted version of the app- <a href="https://myflixregal.netlify.app/">Link</a></p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-warning btn-lg" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="MeetApp" tabindex="-1" aria-labelledby="MeetAppLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h5 class="modal-title" id="MeetAppLabel">Meet App Details</h5>
+                        </div>
+                        <div class="modal-body text-start">
+                            <img src="./images/Screenshot_project_4.jpg" class="img-fluid mb-5" alt="Project 4 image" >
+                            <p>
+                                This is a meet app, displaying a list of upcoming events for a city and time of the events. It will also be available for users to use while offline. It is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+                            </p>
+                            <p>I was the developer for this project.</p>
+                            <p>
+                                Below were the technical requirements of the project-
+                                <ul>
+                                    <li>The app must be a React application.</li>
+                                    <li>The app must be built using the TDD technique.</li>
+                                    <li>The app must use the Google Calendar API and OAuth2 authentication flow.</li>
+                                    <li>The app must use serverless functions (AWS lambda is preferred) for the authorization server instead of using a traditional server.</li>
+                                    <li>The app’s code must be hosted in a Git repository on GitHub.</li>
+                                    <li>The app must work on the latest versions of Chrome, Firefox, Safari, Edge, and Opera, as well as on IE11.</li>
+                                    <li>The app must display well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.</li>
+                                    <li>The app must pass Lighthouse’s PWA checklist.</li>
+                                    <li>The app must work offline or in slow network conditions with the help of a service worker.</li>
+                                    <li>Users may be able to install the app on desktop and add the app to their home screen on mobile.</li>
+                                    <li>The app must be deployed on GitHub Pages.</li>
+                                    <li>The app must implement an alert system using an OOP approach to show information to the user.</li>
+                                    <li>The app must make use of data visualization.</li>
+                                    <li>The app must be covered by tests with a coverage rate >= 90%.</li>
+                                    <li>The app must be monitored using an online performance monitoring tool.</li>
+                                </ul>                                
+                            </p>
+                            <p>This app was built using TDD approach and it is PWA. The tools that were used build are Bootstrap, React, AWS lambda, Google Calendar API & OAuth2. Recharts for charting and Jest, Cucumber for testing.</p>
+                            <p> Github link- <a href="https://github.com/t22n84r/meet_app">Link</a>. There is mock data in the repository, that can be used to run the app locally.</p>
+                            <p> Live hosted version of the app- <a href="https://t22n84r.github.io/meet_app/">Link</a>. Unpublished app, though it is complete. If you would like to see it, send me a gmail email address and I'll add it to test user group to get access.</p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-warning btn-lg" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
-        <footer class="social-media">
-
+        <footer class="social-media mt-5">
+            <hr class="fading-hr" />
             <p>Find me on</p>
-
             <div>
                 <a href="https://github.com/t22n84r"> <img class="social-media_icons" src="images/github_icon.svg" alt="github icon"></a>
                 <a href="https://www.linkedin.com/in/taanvir-nazmee-5b13a7106/"> <img class="social-media_icons" src="images/linkedin_icon.svg" alt="linkedin icon"></a>
             </div>
         </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 
 </html>
