@@ -12,28 +12,33 @@
 
 body {
     font-family: 'Roboto Slab', serif;
-    background: #C8F0FF;
-    color: #5a5a5a;
+    background: #BEADFA;
+    color: #1F4172;
 }
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #003c5a;
+    color: #2E4374;
 }
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #003c5a;
+    color: #2E4374;
 }
 
 h3 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #003c5a;
+    color: #2E4374;
 }
 
 h4 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #003c5a;
+    color: #2E4374;
+}
+
+/* Visited link */
+a:visited {
+    color: #1F4172;
 }
 
 .page-header {
@@ -78,24 +83,12 @@ h4 {
     max-height: 400px;
 }
 
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 #profile-picture {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    max-height: 300px;
     -webkit-box-shadow: 0 10px 5px 0 rgba(34, 60, 80, .16);
             box-shadow: 0 10px 5px 0 rgba(34, 60, 80, .16);
     -webkit-transition: all ease-in-out .3s;
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
-    float: left;
-    margin-right: 40px;
 }
 
 #profile-picture:hover {
@@ -130,58 +123,60 @@ h4 {
     opacity: 0.5;
 }
 
-.text-center {
-    text-align: center;
+table.custom-table {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    background-color: #BEADFA;
+    color: #1F4172;
 }
 
-table, tr, td, th {
-    text-align: center;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #1A0000;
-    border-radius: 10px
+table.custom-table tr {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    background-color: #BEADFA;
+    color: #1F4172;
 }
 
-#underline {
-    text-decoration: underline;
+table.custom-table td {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    background-color: #BEADFA;
+    color: #1F4172;
 }
 
-form input, textarea {
-    padding: 5px;
-    border-radius: 5px;
-    width: 230px;
+table.custom-table th {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    background-color: #BEADFA;
+    color: #1F4172;
 }
 
-form {
-    width: 250px;
-    margin: 0 auto;
+.card {
+    color: #1F4172;
+    background-color: #9EDDFF;
+    border-width: 1px;
+    border-color: #1F4172;
+    width: 18rem;
+    height: 25rem;
 }
 
-#submit {
-    background-color: #89c4e1;
-    margin: 20px 0;
-    -webkit-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
-    transition: all ease-in-out .3s;
-    border-radius: 15px 50px;
+.modal-content {
+    background-color: #9EDDFF;
 }
 
-#submit:hover, #submit:focus {
-    cursor: pointer;
-    opacity: 0.5;
+.fading-hr {
+    border: 0;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2E4374), to(transparent));
+    background: -o-linear-gradient(left, transparent, #2E4374, transparent);
+    background: linear-gradient(to right, transparent, #2E4374, transparent);
 }
 
-#work-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
+/* SVG ===================================================================================================*/
 @-webkit-keyframes color-change {
     0% {
       fill: #edc655;
@@ -193,7 +188,6 @@ form {
       fill: #f76414;
     }
 }
-
 @keyframes color-change {
     0% {
       fill: #edc655;
